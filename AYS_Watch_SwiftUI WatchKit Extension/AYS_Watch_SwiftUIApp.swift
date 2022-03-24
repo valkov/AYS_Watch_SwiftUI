@@ -6,9 +6,14 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct AYS_Watch_SwiftUIApp: App {
+    init() {
+        FirebaseApp.configure()
+    }
+    
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
